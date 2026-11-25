@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalvi 360 — Learn smarter. Go further. | Online Tuition &amp; Study Materials</title>
+<meta name="description" content="Learn smarter with Kalvi 360. Explore student-friendly Physics, Mathematics, Tamil, Computer Science and English study materials, practice questions and online tuition classes.">
+<meta name="keywords" content="Kalvi 360, online tuition, study materials, Physics notes, Maths practice questions, Tamil study materials, Computer Science notes, English tuition, Tamil Nadu students">
+<meta name="theme-color" content="#0E1B3D">
+<meta property="og:title" content="Kalvi 360 — Your learning partner">
+<meta property="og:description" content="Clear concepts. Confident learning. Better results. Explore study materials and online classes.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&family=Noto+Sans+Tamil:wght@500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"EducationalOrganization","name":"Kalvi 360","description":"Online tuition classes and study materials for Maths, Physics, Tamil, Computer Science and English.","email":"kalvi360channel@gmail.com","telephone":"+917358679269","sameAs":["http://www.youtube.com/@Kalvi_360","https://whatsapp.com/channel/0029Vb9CIsFIyPtXicBMJJ3d"]}
+</script>
+<style>
+/* ===== EDIT COLOURS HERE ===== */
+:root{
+  --ink:#0E1B3D; --blue:#143A8C; --sun:#FDBB1B; --coral:#FF6B6B; --mint:#35E0A1; --paper:#F6F5FF; --white:#fff;
+  --font:'Bricolage Grotesque','Noto Sans Tamil',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);color:var(--ink);background:var(--paper);line-height:1.55;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{line-height:1.05;letter-spacing:-.02em;font-weight:800}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+section{padding:96px 0;position:relative}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+
+/* custom cursor (desktop only) */
+@media (hover:hover) and (pointer:fine){
+  body,a,button,summary{cursor:none}
+  .c-dot,.c-ring{position:fixed;top:0;left:0;pointer-events:none;z-index:999;border-radius:50%}
+  .c-dot{width:8px;height:8px;background:var(--ink);margin:-4px 0 0 -4px}
+  .c-ring{width:38px;height:38px;margin:-19px 0 0 -19px;border:2px solid var(--ink);display:grid;place-items:center;font-size:11px;font-weight:800;transition:width .25s,height .25s,margin .25s,background .25s,border-color .25s,color .25s}
+  .c-ring.big{width:84px;height:84px;margin:-42px 0 0 -42px;background:var(--sun);border-color:var(--sun);color:var(--ink)}
+}
+@media (hover:none){.c-dot,.c-ring{display:none}}
+
+/* nav */
+nav{position:fixed;top:14px;left:50%;transform:translateX(-50%);width:min(1100px,calc(100% - 28px));background:rgba(255,255,255,.85);backdrop-filter:blur(12px);border-radius:999px;padding:10px 12px 10px 22px;display:flex;align-items:center;justify-content:space-between;z-index:50;box-shadow:0 6px 24px rgba(20,18,43,.1)}
+.logo{font-weight:800;font-size:1.3rem}.logo b{color:var(--blue)}
+nav ul{display:flex;gap:26px;list-style:none;font-weight:600;font-size:.95rem}
+nav ul a:hover{color:var(--blue)}
+.btn{display:inline-block;font-weight:800;padding:14px 26px;border-radius:999px;background:var(--ink);color:var(--white);border:2px solid var(--ink);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translate(-3px,-3px);box-shadow:5px 5px 0 var(--blue)}
+.btn.sun{background:var(--sun);color:var(--ink)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.small{padding:10px 20px;font-size:.9rem}
+
+/* hero */
+.hero{min-height:100vh;display:grid;align-items:center;padding-top:130px;background:
+  linear-gradient(rgba(20,58,140,.07) 1px,transparent 1px) 0 0/38px 38px,
+  linear-gradient(90deg,rgba(20,58,140,.07) 1px,transparent 1px) 0 0/38px 38px,var(--paper);overflow:hidden}
+.hero h1{font-size:clamp(2.6rem,7vw,5.6rem);max-width:900px}
+.hl{background:linear-gradient(transparent 62%,var(--sun) 62%)}
+.hero p.sub{font-size:clamp(1.05rem,2vw,1.3rem);max-width:600px;margin:26px 0 34px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.chip{position:absolute;font-weight:800;padding:12px 20px;border-radius:18px;border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink);font-size:1.2rem;transition:transform .15s ease-out;will-change:transform;user-select:none}
+.chip small{font-weight:600;font-size:.7rem;display:block;opacity:.7}
+.c1{top:20%;right:9%;background:var(--sun)}.c2{top:46%;right:4%;background:var(--mint)}
+.c3{top:68%;right:18%;background:var(--coral);color:#fff}.c4{top:30%;right:28%;background:var(--blue);color:#fff}
+.c5{top:80%;right:5%;background:var(--white)}
+@media(max-width:900px){.chip{display:none}}
+
+/* marquee */
+.marq{background:var(--ink);color:var(--sun);padding:16px 0;overflow:hidden;white-space:nowrap;transform:rotate(-1.2deg);margin:-10px -10px 0}
+.marq div{display:inline-block;animation:run 24s linear infinite;font-weight:800;font-size:1.3rem}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* picker */
+.pick{background:var(--blue);color:#fff;border-radius:40px;margin:80px auto 0;max-width:1140px;padding:56px 40px}
+.pick h2{font-size:clamp(1.9rem,4vw,3rem);margin-bottom:10px}
+.opts{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0}
+.opts button{font:inherit;font-weight:600;padding:12px 20px;border-radius:999px;border:2px solid #fff;background:transparent;color:#fff;transition:.2s}
+.opts button:hover,.opts button.on{background:#fff;color:var(--blue)}
+.ans{min-height:80px;background:#fff;color:var(--ink);border-radius:24px;padding:22px 26px;font-weight:600}
+.ans a{color:var(--blue);font-weight:800;text-decoration:underline}
+
+/* subjects */
+.head{max-width:680px;margin-bottom:48px}
+.head h2{font-size:clamp(2rem,4.6vw,3.4rem);margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px}
+.sub-card{border:2px solid var(--ink);border-radius:28px;padding:28px 24px 30px;min-height:250px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .2s ease-out;transform-style:preserve-3d;box-shadow:6px 6px 0 var(--ink)}
+.sub-card .ico{font-size:3rem;font-weight:800}
+.sub-card h3{font-size:1.6rem}
+.sub-card p{font-size:.95rem;margin-top:6px}
+.s1{background:var(--sun)}.s2{background:var(--mint)}.s3{background:var(--coral);color:#fff}.s4{background:var(--blue);color:#fff}.s5{background:var(--white)}
+
+/* two columns: materials / classes */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+@media(max-width:800px){.two{grid-template-columns:1fr}.pick{padding:36px 22px;border-radius:28px;margin:60px 14px 0}}
+.panel{border-radius:36px;padding:44px 36px;border:2px solid var(--ink)}
+.panel.dark{background:var(--ink);color:#fff}
+.panel h2{font-size:clamp(1.8rem,3.4vw,2.5rem);margin-bottom:14px}
+.panel ul{list-style:none;margin:18px 0 28px}
+.panel li{padding:10px 0;border-bottom:1px dashed currentColor;font-weight:600}
+.panel li::before{content:"✓ ";color:var(--mint);font-weight:800}
+.panel:not(.dark) li::before{color:var(--blue)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;counter-reset:s}
+.step{background:#fff;border-radius:28px;padding:32px 26px;position:relative;counter-increment:s;border:2px solid var(--ink)}
+.step::before{content:counter(s);position:absolute;top:-22px;left:22px;width:48px;height:48px;border-radius:50%;background:var(--sun);border:2px solid var(--ink);display:grid;place-items:center;font-weight:800;font-size:1.3rem}
+.step h3{margin:10px 0 8px;font-size:1.4rem}
+
+/* faq */
+details{background:#fff;border-radius:20px;padding:20px 26px;margin-bottom:12px;border:2px solid var(--ink)}
+summary{font-weight:800;font-size:1.1rem;list-style:none;display:flex;justify-content:space-between}
+summary::after{content:"+";font-size:1.5rem;line-height:1;transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin-top:10px}
+
+/* contact */
+.contact{background:var(--ink);color:#fff;text-align:center;border-radius:48px 48px 0 0;padding:90px 22px 40px}
+.contact h2{font-size:clamp(2.2rem,6vw,4.6rem);max-width:800px;margin:0 auto 20px}
+.contact .links{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin:34px 0}
+.contact .links a.btn{background:#fff;color:var(--ink);border-color:#fff}
+.contact .links a.btn.sun{background:var(--sun)}
+.contact small{opacity:.6;display:block;margin-top:40px}
+
+/* scroll reveal (one gentle effect) */
+.rv{opacity:0;transform:translateY(30px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none}.marq div{animation:none}}
+@media(max-width:720px){nav ul{display:none}section{padding:70px 0}}
+
+/* logo + about */
+.logo img{height:40px;width:auto;display:block}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.about h2{font-size:clamp(2rem,4.6vw,3.4rem);margin-bottom:18px}
+.about p{margin-bottom:14px;font-size:1.1rem;max-width:560px}
+.feats{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
+.feat{border:2px solid var(--ink);border-radius:24px;padding:20px;box-shadow:5px 5px 0 var(--ink)}
+.feat span{font-size:2rem}.feat h3{font-size:1.2rem;margin:6px 0 2px}.feat p{font-size:.92rem;margin:0}
+.logo-card{background:#fff;border:2px solid var(--ink);border-radius:36px;padding:34px;box-shadow:8px 8px 0 var(--sun);transform:rotate(2.5deg)}
+.logo-card img{width:100%;height:auto;display:block}
+@media(max-width:800px){.about{grid-template-columns:1fr}.feats{grid-template-columns:1fr}}
+/* subject button + popup */
+button.sub-card{font:inherit;text-align:left;color:var(--ink);width:100%}
+button.sub-card.s4{color:#fff}
+.sub-card .tap{display:inline-block;margin-top:12px;font-weight:800;font-size:.85rem}
+.modal{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:16px;background:rgba(14,27,61,.72);backdrop-filter:blur(6px);opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s}
+.modal.open{opacity:1;visibility:visible}
+.mbox{width:min(780px,100%);max-height:92vh;overflow:auto;background:#fff;border-radius:32px;border:3px solid var(--ink);box-shadow:8px 8px 0 var(--ink);transform:scale(.55) rotate(-5deg);transition:transform .5s cubic-bezier(.34,1.56,.64,1)}
+.modal.open .mbox{transform:none}
+.mhead{padding:34px 30px 26px;position:relative;overflow:hidden}
+.mhead h2{font-size:clamp(2rem,6vw,3.2rem);margin-bottom:6px}
+.mhead p{font-weight:600;max-width:460px}
+.mglyph{position:absolute;right:56px;top:8px;font-size:6rem;font-weight:800;opacity:.28;animation:bob 3s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-12px) rotate(8deg)}}
+.mx{position:absolute;top:14px;right:14px;width:38px;height:38px;border-radius:50%;border:2px solid currentColor;background:transparent;color:inherit;font:inherit;font-weight:800}
+.mbody{padding:26px 30px 30px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+@media(max-width:640px){.cols{grid-template-columns:1fr}.mglyph{font-size:4rem}}
+.mbody h3{font-size:1.15rem;margin-bottom:12px}
+.tags span{display:inline-block;margin:0 6px 8px 0;padding:6px 14px;border-radius:999px;background:var(--paper);border:2px solid var(--ink);font-weight:600;font-size:.88rem;opacity:0}
+.modal.open .tags span{animation:pop .45s cubic-bezier(.34,1.56,.64,1) both;animation-delay:calc(var(--i)*55ms + 250ms)}
+@keyframes pop{from{opacity:0;transform:scale(.4) translateY(10px)}to{opacity:1;transform:none}}
+.fact{margin:8px 0 24px;padding:16px 20px;border-radius:20px;background:var(--sun);border:2px dashed var(--ink);font-weight:600}
+@media(prefers-reduced-motion:reduce){.mbox,.tags span,.mglyph{animation:none!important;transition:none!important;opacity:1}}
+
+/* ---- v3 additions ---- */
+.eyebrow{display:inline-block;background:var(--sun);border:2px solid var(--ink);border-radius:999px;padding:4px 14px;font-weight:800;font-size:.78rem;margin-bottom:16px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.4rem,5.2vw,4.6rem)}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-art{max-width:440px}}
+.proof{display:flex;align-items:center;gap:14px;margin-top:30px;font-weight:600}
+.avs{display:flex}.avs span{width:40px;height:40px;border-radius:50%;border:2px solid var(--ink);display:grid;place-items:center;font-weight:800;margin-left:-10px;background:var(--sun)}
+.avs span:first-child{margin-left:0}.avs span:nth-child(2){background:var(--mint)}.avs span:nth-child(3){background:var(--coral);color:#fff}.avs span:nth-child(4){background:var(--blue);color:#fff}
+.hero-art{position:relative;width:100%}
+.hcard{background:#fff;border:3px solid var(--ink);border-radius:32px;padding:26px;box-shadow:8px 8px 0 var(--sun);transform:rotate(1.5deg)}
+.htop{display:flex;justify-content:space-between;font-size:.8rem;margin-bottom:14px}
+.hcard h3{font-size:1.9rem}.hcard>p{margin:6px 0 16px}
+.mini{display:flex;align-items:center;gap:12px;padding:10px 0;border-top:1px dashed var(--ink)}
+.mini i{font-style:normal;font-weight:800;width:42px;height:42px;border-radius:12px;border:2px solid var(--ink);display:grid;place-items:center}
+.mini span{flex:1}.mini b{display:block}.mini small{opacity:.7}.mini em{font-style:normal;font-weight:800;font-size:.75rem}
+.mini:hover em{color:var(--blue)}
+.hero-art .chip{font-size:.95rem;padding:10px 16px}
+.hero-art .c1{top:-26px;left:-18px;right:auto}.hero-art .c2{top:-18px;right:-12px;left:auto}
+.hero-art .c3{top:auto;bottom:70px;left:-44px;right:auto}.hero-art .c4{top:auto;bottom:-24px;right:-10px;left:auto}
+.mat{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+@media(max-width:800px){.mat{grid-template-columns:1fr}}
+.mat h2,.head h2{font-size:clamp(2rem,4.6vw,3.4rem);margin-bottom:14px}.mat p{margin-bottom:8px}
+.checks{list-style:none;margin:18px 0 26px}.checks li{padding:8px 0;font-weight:600}.checks li::before{content:"✓ ";color:var(--blue);font-weight:800}
+.shelf{background:var(--ink);color:#fff;border-radius:32px;padding:24px;border:3px solid var(--ink);box-shadow:8px 8px 0 var(--sun)}
+.shead,.sfoot{display:flex;justify-content:space-between;font-size:.8rem}.shead strong{font-size:1.1rem}
+.rrow{display:flex;align-items:center;gap:14px;background:rgba(255,255,255,.08);border-radius:18px;padding:12px 14px;margin-top:12px}
+.rrow>div:nth-child(2){flex:1}.rrow b{display:block;font-size:.98rem}.rrow small{opacity:.7}
+.pdf{background:var(--coral);color:#fff;font-weight:800;font-size:.75rem;width:42px;height:48px;border-radius:8px;display:grid;place-items:center;flex:none}
+.sfoot{margin-top:16px;opacity:.75}
+.cls{position:relative;overflow:hidden;border:3px solid var(--ink);border-radius:36px;padding:38px 34px;box-shadow:8px 8px 0 var(--ink)}
+.cls h3{font-size:2.2rem;margin:12px 0 8px}.cls p{max-width:360px;margin-bottom:22px;font-weight:600}
+.tg{font-weight:800;font-size:.8rem;border:2px solid var(--ink);border-radius:999px;padding:4px 12px;background:#fff}
+.cg{position:absolute;right:20px;bottom:-30px;font-size:9rem;font-weight:800;opacity:.18;line-height:1}
+.step h3{margin:10px 0 8px;font-size:1.3rem}
+.ctab{background:var(--sun);border:3px solid var(--ink);border-radius:40px;padding:46px 40px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;box-shadow:8px 8px 0 var(--ink)}
+.ctab h2{font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:8px;max-width:560px}
+.foot{background:var(--ink);color:#fff;border-radius:48px 48px 0 0;padding:70px 0 28px}
+.ft{display:grid;grid-template-columns:1.4fr 1fr 1.2fr;gap:40px}@media(max-width:800px){.ft{grid-template-columns:1fr}}
+.ft h4{color:var(--sun);margin-bottom:14px;font-size:.95rem}.ft a{display:block;opacity:.85;margin-bottom:8px}.ft a:hover{opacity:1;color:var(--sun)}
+.ft p{opacity:.85;max-width:380px}
+.flogo{display:inline-block!important;background:#fff;border-radius:18px;padding:8px 14px;margin-bottom:16px;opacity:1!important}.flogo img{height:44px;display:block}
+.fb{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;border-top:1px solid rgba(255,255,255,.18);margin-top:40px;padding-top:22px;font-size:.9rem;opacity:.85}
+.soc a{display:inline;margin-left:18px;opacity:.9}
+.wa{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:#25D366;color:#fff;border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink);display:grid;place-items:center;font-size:1.6rem;z-index:60}
+.menu-btn{display:none;border:2px solid var(--ink);background:#fff;border-radius:50%;width:42px;height:42px;font:inherit;font-weight:800}
+@media(max-width:720px){.menu-btn{display:block}nav ul.open{display:flex;flex-direction:column;gap:14px;position:absolute;top:66px;left:0;right:0;background:#fff;border:2px solid var(--ink);border-radius:28px;padding:22px}}
+@media(max-width:480px){nav .btn.small{display:none}.menu-btn{margin-left:auto}}
+/* about illustration */
+.illus{width:100%;max-width:520px;justify-self:center}
+.illus svg{width:100%;height:auto;display:block;overflow:visible}
+.k-ink{fill:var(--ink)}.f-sun{fill:var(--sun)}.f-mint{fill:var(--mint)}.f-coral{fill:var(--coral)}.f-blue{fill:var(--blue)}.f-white{fill:#fff}.f-skin{fill:#F2B48A}
+.sk{stroke:var(--ink);stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+.pl{fill:none;stroke:var(--ink);stroke-opacity:.25;stroke-width:3;stroke-linecap:round}
+.ct{font-weight:800;font-size:20px;text-anchor:middle;dominant-baseline:central;font-family:var(--font)}
+.illus svg *{transform-box:fill-box}
+.orbit{fill:none;stroke:var(--ink);stroke-opacity:.3;stroke-width:2;stroke-dasharray:3 12;stroke-linecap:round;transform-origin:center;animation:spin 40s linear infinite}
+.cap{transform-origin:center;animation:capb 3s ease-in-out infinite}
+.arm-r{transform-origin:0% 100%;animation:wr 1.6s ease-in-out infinite alternate}
+.arm-l{transform-origin:100% 100%;animation:wl 1.6s ease-in-out .4s infinite alternate}
+.eye{transform-origin:center;animation:bl 4.5s infinite}
+.pupils{transform:translate(var(--ex,0px),var(--ey,0px));transition:transform .15s}
+.page{transform-origin:0% 50%;animation:pg 3.2s ease-in-out infinite alternate}
+.fl{animation:fl 4s ease-in-out infinite}
+.tw{transform-origin:center;animation:tw 2.4s ease-in-out infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes capb{50%{transform:translateY(-7px) rotate(-3deg)}}
+@keyframes wr{from{transform:rotate(-8deg)}to{transform:rotate(14deg)}}
+@keyframes wl{from{transform:rotate(8deg)}to{transform:rotate(-14deg)}}
+@keyframes bl{0%,94%,100%{transform:scaleY(1)}97%{transform:scaleY(.1)}}
+@keyframes pg{0%,15%{transform:scaleX(1)}85%,100%{transform:scaleX(-1)}}
+@keyframes fl{50%{transform:translateY(-9px)}}
+@keyframes tw{0%,100%{transform:scale(.3);opacity:.4}50%{transform:scale(1);opacity:1}}
+@media(prefers-reduced-motion:reduce){.illus svg *{animation:none!important}}
+@media(max-width:800px){.illus{max-width:420px}}
+
+
+</style>
+</head>
+<body>
+<div class="c-dot"></div><div class="c-ring"></div>
+<nav>
+  <a href="#top" class="logo"><img src="assets/kalvi360-logo-header.png" alt="Kalvi 360 logo" width="120" height="40"></a>
+  <ul id="navLinks">
+    <li><a href="#about">About</a></li><li><a href="#subjects">Subjects</a></li><li><a href="#materials">Study materials</a></li>
+    <li><a href="#classes">Online classes</a></li><li><a href="#how">How it works</a></li><li><a href="#faq">FAQ</a></li>
+  </ul>
+  <a class="btn small" data-wa href="#">Let's get started ↗</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Confused by a subject? <span class="hl">Let's make it click.</span></h1>
+      <p class="sub">Big chapters. Tough questions. Exam-time worries. Take it one step at a time with student-friendly notes, practice questions and online classes made to help you learn with confidence.</p>
+      <div class="cta-row">
+        <a class="btn sun" href="#materials" data-cur="Explore">Explore study materials ↗</a>
+        <a class="btn ghost" href="#classes" data-cur="Join">Find your class →</a>
+      </div>
+      <div class="proof"><div class="avs"><span>✎</span><span>π</span><span>あ</span><span>⌘</span></div><b>Learn at your pace. Build your confidence.</b></div>
+    </div>
+    <div class="hero-art">
+      <div class="hcard">
+        <div class="htop"><b>YOUR LEARNING SPACE</b><span>✳</span></div>
+        <h3>A little progress<br>every day.</h3><p>Small steps. Strong foundations.</p>
+        <a class="mini" href="#subjects"><i style="background:var(--sun)">∑</i><span><b>Mathematics</b><small>Understand the why</small></span><em>EXPLORE ↗</em></a>
+        <a class="mini" href="#subjects"><i style="background:var(--mint)">⚛</i><span><b>Physics</b><small>Make concepts click</small></span><em>EXPLORE ↗</em></a>
+        <a class="mini" href="#subjects"><i style="background:var(--coral);color:#fff">அ</i><span><b>Languages</b><small>Learn with clarity</small></span><em>EXPLORE ↗</em></a>
+      </div>
+      <div class="chip c1" data-d="30" style="background:var(--sun)"><small>01 / 05</small>Pick a subject</div>
+      <div class="chip c2" data-d="-26" style="background:var(--blue);color:#fff">π r²<small>Maths</small></div>
+      <div class="chip c3" data-d="34" style="background:var(--mint)"><small>Learn ✦</small>at your own pace</div>
+      <div class="chip c4" data-d="-30" style="background:var(--coral);color:#fff">📚 Notes + Practice<small>in one place</small></div>
+    </div>
+  </div>
+</header>
+
+<div class="marq" aria-hidden="true"><div>
+  LESS SCROLLING, MORE LEARNING ✳ CONCEPTS MADE CLEAR ✳ PRACTICE WITH PURPOSE ✳ YOUR NEXT STEP STARTS HERE ✳ LESS SCROLLING, MORE LEARNING ✳ CONCEPTS MADE CLEAR ✳ PRACTICE WITH PURPOSE ✳ YOUR NEXT STEP STARTS HERE ✳
+  LESS SCROLLING, MORE LEARNING ✳ CONCEPTS MADE CLEAR ✳ PRACTICE WITH PURPOSE ✳ YOUR NEXT STEP STARTS HERE ✳ LESS SCROLLING, MORE LEARNING ✳ CONCEPTS MADE CLEAR ✳ PRACTICE WITH PURPOSE ✳ YOUR NEXT STEP STARTS HERE ✳
+</div></div>
+
+<section id="about">
+  <div class="wrap about">
+    <div class="rv">
+      <h2>About KALVI_360 Academy</h2>
+      <p>KALVI_360 Academy is an educational platform dedicated to making learning simple, understandable and accessible. Our goal is to provide quality educational content, video lectures, study materials and examination resources for students.</p>
+      <p>We believe that learning is not just about memorising facts, but about understanding concepts and applying knowledge.</p>
+      <div class="feats">
+        <div class="feat" style="background:var(--sun)"><span>🎬</span><h3>Video Lectures</h3><p>Clear and simple explanations</p></div>
+        <div class="feat" style="background:var(--mint)"><span>📝</span><h3>Exam Preparation</h3><p>Topic-wise practice and tests</p></div>
+      </div>
+    </div>
+    <div class="illus rv">
+<svg viewBox="0 0 480 440" role="img" aria-label="Illustration of a happy student with a graduation cap cheering over an open book, surrounded by subject symbols">
+<circle class="orbit" cx="240" cy="215" r="200"/>
+<circle class="f-sun" cx="240" cy="225" r="150"/>
+<circle class="f-mint sk" cx="410" cy="125" r="30"/>
+<circle class="f-coral sk" cx="70" cy="368" r="22"/>
+<g transform="translate(130,150)"><path class="tw k-ink" d="M0,-13 L3.5,-3.5 L13,0 L3.5,3.5 L0,13 L-3.5,3.5 L-13,0 L-3.5,-3.5Z" style="animation-delay:0s"/></g>
+<g transform="translate(330,100)"><path class="tw f-blue" d="M0,-13 L3.5,-3.5 L13,0 L3.5,3.5 L0,13 L-3.5,3.5 L-13,0 L-3.5,-3.5Z" style="animation-delay:0.8s"/></g>
+<g transform="translate(92,300)"><path class="tw f-blue" d="M0,-13 L3.5,-3.5 L13,0 L3.5,3.5 L0,13 L-3.5,3.5 L-13,0 L-3.5,-3.5Z" style="animation-delay:1.4s"/></g>
+<g transform="translate(430,262)"><path class="tw k-ink" d="M0,-13 L3.5,-3.5 L13,0 L3.5,3.5 L0,13 L-3.5,3.5 L-13,0 L-3.5,-3.5Z" style="animation-delay:0.4s"/></g>
+<g class="arm-l">
+<line x1="195" y1="288" x2="148" y2="230" style="stroke:var(--ink);stroke-width:30;stroke-linecap:round"/>
+<line x1="195" y1="288" x2="148" y2="230" style="stroke:var(--blue);stroke-width:24;stroke-linecap:round"/>
+<circle cx="146" cy="226" r="13" class="f-skin sk"/>
+</g>
+<g class="arm-r">
+<line x1="285" y1="288" x2="342" y2="230" style="stroke:var(--ink);stroke-width:30;stroke-linecap:round"/>
+<line x1="285" y1="288" x2="342" y2="230" style="stroke:var(--blue);stroke-width:24;stroke-linecap:round"/>
+<circle cx="344" cy="226" r="13" class="f-skin sk"/>
+</g>
+<rect x="185" y="250" width="110" height="115" rx="46" class="f-blue sk"/>
+<text x="240" y="296" class="ct" style="fill:var(--sun);font-size:19px">K360</text>
+<circle cx="240" cy="205" r="42" class="f-skin sk"/>
+<path d="M199,196 Q205,170 240,168 Q275,170 281,196 Q262,184 240,186 Q218,184 199,196Z" class="k-ink"/>
+<g class="pupils">
+<ellipse class="eye k-ink" cx="224" cy="208" rx="5" ry="6.5"/>
+<ellipse class="eye k-ink" cx="256" cy="208" rx="5" ry="6.5"/>
+</g>
+<circle cx="212" cy="223" r="6" class="f-coral" style="opacity:.55"/>
+<circle cx="268" cy="223" r="6" class="f-coral" style="opacity:.55"/>
+<path d="M227,222 Q240,238 253,222" class="sk" style="fill:none"/>
+<g class="cap">
+<path d="M204,166 L204,186 Q240,204 276,186 L276,166Z" class="k-ink sk"/>
+<polygon points="170,158 240,130 310,158 240,186" class="k-ink sk"/>
+<circle cx="240" cy="158" r="4" class="f-sun"/>
+<line x1="310" y1="158" x2="310" y2="196" style="stroke:var(--coral);stroke-width:4;stroke-linecap:round"/>
+<circle cx="310" cy="201" r="7" class="f-sun sk"/>
+</g>
+<path d="M92,338 L92,414 Q166,392 240,418 Q314,392 388,414 L388,338Z" class="f-coral sk"/>
+<path d="M104,330 Q172,308 240,334 L240,404 Q172,380 104,402Z" class="f-white sk"/>
+<path d="M376,330 Q308,308 240,334 L240,404 Q308,380 376,402Z" class="f-white sk"/>
+<path class="pl" d="M124,352 Q148,338 172,354"/>
+<path class="pl" d="M124,366 Q148,352 172,368"/>
+<path class="pl" d="M124,380 Q148,366 172,382"/>
+<path class="pl" d="M264,352 Q288,338 312,354"/>
+<path class="pl" d="M264,366 Q288,352 312,368"/>
+<path class="pl" d="M264,380 Q288,366 312,382"/>
+<path class="page f-white sk" d="M240,334 Q308,308 376,330 L376,402 Q308,380 240,404Z"/>
+<g class="fl" style="animation-delay:0s">
+<rect x="32" y="68" width="84" height="40" rx="14" class="k-ink"/>
+<rect x="28" y="64" width="84" height="40" rx="14" class="f-mint sk"/>
+<text x="70" y="85" class="ct" style="fill:var(--ink)">π r²</text>
+</g>
+<g class="fl" style="animation-delay:-1.2s">
+<rect x="356" y="48" width="96" height="40" rx="14" class="k-ink"/>
+<rect x="352" y="44" width="96" height="40" rx="14" class="f-coral sk"/>
+<text x="400" y="65" class="ct" style="fill:#fff">F = ma</text>
+</g>
+<g class="fl" style="animation-delay:-2.2s">
+<rect x="14" y="240" width="84" height="40" rx="14" class="k-ink"/>
+<rect x="10" y="236" width="84" height="40" rx="14" class="f-white sk"/>
+<text x="52" y="257" class="ct" style="fill:var(--ink)">அ ஆ</text>
+</g>
+<g class="fl" style="animation-delay:-0.6s">
+<rect x="392" y="176" width="72" height="40" rx="14" class="k-ink"/>
+<rect x="388" y="172" width="72" height="40" rx="14" class="f-blue sk"/>
+<text x="424" y="193" class="ct" style="fill:#fff">&lt;/&gt;</text>
+</g>
+<g class="fl" style="animation-delay:-3s">
+<rect x="400" y="304" width="64" height="40" rx="14" class="k-ink"/>
+<rect x="396" y="300" width="64" height="40" rx="14" class="f-sun sk"/>
+<text x="428" y="321" class="ct" style="fill:var(--ink)">Aa</text>
+</g>
+</svg>
+</div>
+  </div>
+</section>
+
+<!-- Interactive picker -->
+<div class="pick rv">
+  <h2>What's troubling you today?</h2>
+  <p>Tap one. We'll show you where to start.</p>
+  <div class="opts">
+    <button data-a="Formulas are hard to remember? Download our formula PDFs for Maths and Physics from the Materials section.">I forget formulas</button>
+    <button data-a="Exams coming? Practice questions with easy steps are shared regularly. Join the WhatsApp channel to get them first.">Exam is near</button>
+    <button data-a="No problem. Our live online classes start from the basics and explain slowly. <a href='#how'>See how to join</a>.">I don't understand the class</button>
+    <button data-a="Computer Science and English are easier with daily practice. Check the notes and questions in Materials.">I need daily practice</button>
+  </div>
+  <div class="ans" id="ans">👆 Pick an option and the answer shows here.</div>
+</div>
+
+<section id="subjects">
+  <div class="wrap">
+    <div class="head rv"><span class="eyebrow">A SUBJECT FOR EVERY CURIOUS MIND</span><h2>Find your subject. Find your flow.</h2><p>From formulas to language skills, explore learning resources organised by subject — so you can spend less time searching and more time understanding.</p></div>
+    <div class="grid">
+      <button class="sub-card s2 rv" data-sub="Physics" data-cur="Open"><span class="ico">⚛</span><div><h3>Physics</h3><p>Concepts, laws &amp; formula sheets</p><span class="tap">Tap to explore ↗</span></div></button>
+      <button class="sub-card s1 rv" data-sub="Mathematics" data-cur="Open"><span class="ico">∑</span><div><h3>Mathematics</h3><p>Formulas &amp; problem practice</p><span class="tap">Tap to explore ↗</span></div></button>
+      <button class="sub-card s3 rv" data-sub="Tamil" data-cur="Open"><span class="ico">அ</span><div><h3>Tamil</h3><p>Notes &amp; learning support</p><span class="tap">Tap to explore ↗</span></div></button>
+      <button class="sub-card s4 rv" data-sub="Computer Science" data-cur="Open"><span class="ico">⌘</span><div><h3>Computer Science</h3><p>Key topics &amp; practice</p><span class="tap">Tap to explore ↗</span></div></button>
+      <button class="sub-card s5 rv" data-sub="English" data-cur="Open"><span class="ico">Aa</span><div><h3>English</h3><p>Grammar &amp; language skills</p><span class="tap">Tap to explore ↗</span></div></button>
+    </div>
+  </div>
+</section>
+
+<section id="materials">
+  <div class="wrap mat">
+    <div class="rv">
+      <span class="eyebrow">YOUR STUDY TOOLKIT</span>
+      <h2>Good notes.<br>Great practice.<br><span class="hl">More confidence.</span></h2>
+      <p>Get useful learning materials in one simple place. Download subject-wise PDFs, revise important formulas and test your understanding with practice questions.</p>
+      <ul class="checks"><li>Easy-to-follow subject notes</li><li>Practice questions to strengthen concepts</li><li>Quick revision &amp; formula sheets</li></ul>
+      <a class="btn" data-drive href="#" data-cur="Open">Browse learning materials ↗</a>
+    </div>
+    <div class="shelf rv">
+      <div class="shead"><strong>Study shelf ✳</strong><span>PDF RESOURCES</span></div>
+      <div class="rrow"><div class="pdf">PDF</div><div><b>Physics — Chapter Notes</b><small>Concept summaries · Subject-wise</small></div><a class="btn sun small" data-drive href="#" data-cur="Open">OPEN ↗</a></div>
+      <div class="rrow"><div class="pdf">PDF</div><div><b>Mathematics — Practice Set</b><small>Questions · Step-by-step practice</small></div><a class="btn sun small" data-drive href="#" data-cur="Open">OPEN ↗</a></div>
+      <div class="rrow"><div class="pdf">PDF</div><div><b>Quick Formula Book</b><small>Revision · Important formulas</small></div><a class="btn sun small" data-drive href="#" data-cur="Open">OPEN ↗</a></div>
+      <div class="rrow"><div class="pdf">PDF</div><div><b>Computer Science — Key Topics</b><small>Study notes · Topic-wise</small></div><a class="btn sun small" data-drive href="#" data-cur="Open">OPEN ↗</a></div>
+      <div class="sfoot"><span>New resources can be added regularly</span><span>↗</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="classes">
+  <div class="wrap">
+    <div class="head rv"><span class="eyebrow">LEARN WITH GUIDANCE</span><h2>When you need a little extra clarity.</h2><p>Join an online tuition class, ask questions and build a stronger understanding with guided learning. Start by registering your interest.</p></div>
+    <div class="two">
+      <article class="cls rv" style="background:var(--sun)"><span class="tg">ONLINE TUITION · 01</span><h3>Mathematics</h3><p>Make tricky problems feel simpler. Build your fundamentals and practise with guidance.</p><a class="btn" data-fm href="#" data-cur="Register">Register your interest ↗</a><span class="cg">∑</span></article>
+      <article class="cls rv" style="background:var(--mint)"><span class="tg">ONLINE TUITION · 02</span><h3>Physics</h3><p>Understand the concepts behind the formulas and connect classroom learning to real life.</p><a class="btn" data-fp href="#" data-cur="Register">Register your interest ↗</a><span class="cg">⚛</span></article>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="head rv"><span class="eyebrow">NO CONFUSION. JUST THREE STEPS.</span><h2>Getting started is that simple.</h2><p>No complicated student portal. Just choose what you need and connect with Kalvi 360.</p></div>
+    <div class="steps">
+      <article class="step rv"><h3>🧭 Choose your subject</h3><p>Pick Physics, Maths, Tamil, Computer Science or English based on what you want to learn.</p></article>
+      <article class="step rv"><h3>📖 Explore &amp; practise</h3><p>Open the available PDF notes, formula sheets and practice questions from the study shelf.</p></article>
+      <article class="step rv"><h3>💬 Get learning support</h3><p>Register for an online class or message us on WhatsApp to know more.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap" style="max-width:820px">
+    <div class="head rv"><h2>Questions? We have answers.</h2></div>
+    <details><summary>Which subjects are available?</summary><p>Maths, Physics, Tamil, Computer Science and English.</p></details>
+    <details><summary>How do I join the online classes?</summary><p>Fill the registration form or message us on WhatsApp. We will share the class details.</p></details>
+    <details><summary>Where can I get notes and practice questions?</summary><p>Open the Materials folder on this page. We update the PDFs regularly and share news on the WhatsApp channel.</p></details>
+    <details><summary>Is this a login website?</summary><p>No. This is a simple page. Everything works with a WhatsApp link, a form and a Drive folder.</p></details>
+  </div>
+</section>
+
+
+<section style="padding:30px 0 90px"><div class="wrap"><div class="ctab rv">
+  <div><span class="eyebrow" style="background:#fff">YOUR NEXT CHAPTER STARTS HERE</span><h2>One question can change how you learn.</h2><p>Tell us what you're studying. We'll help you find your next step.</p></div>
+  <a class="btn" data-wa href="#" data-cur="Chat">Talk to Kalvi 360 ↗</a>
+</div></div></section>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="ft">
+      <div><a class="flogo" href="#top"><img src="assets/kalvi360-logo.png" alt="Kalvi 360 logo"></a><p>Confused by subjects? Stuck with studies? You're in the right place. Kalvi 360 is your learning partner for clearer concepts and confident learning.</p></div>
+      <div><h4>EXPLORE</h4><a href="#subjects">Subjects</a><a href="#materials">Study materials</a><a href="#classes">Online tuition</a><a href="#how">How it works</a></div>
+      <div><h4>LET'S CONNECT</h4><a data-wa href="#">WhatsApp: +91 73586 79269</a><a href="mailto:kalvi360channel@gmail.com">kalvi360channel@gmail.com</a><a href="https://www.youtube.com/@Kalvi_360" target="_blank" rel="noopener">YouTube channel ↗</a><a data-channel href="#">WhatsApp Channel ↗</a></div>
+    </div>
+    <div class="fb"><span>© <span id="yr"></span> Kalvi 360. Learn something new every day.</span><span class="soc"><a href="https://www.youtube.com/@Kalvi_360" target="_blank" rel="noopener">YouTube</a><a data-channel href="#">WhatsApp</a><a href="mailto:kalvi360channel@gmail.com">Email</a></span></div>
+  </div>
+</footer>
+<a class="wa" data-wa href="#" aria-label="Chat with Kalvi 360 on WhatsApp" data-cur="Chat"> <i class="fa-solid fa-comment"></i> </a>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mt">
+  <div class="mbox">
+    <div class="mhead" id="mh"><span class="mglyph" id="mg"></span><button class="mx" id="mx" aria-label="Close" data-cur="Close">✕</button><h2 id="mt"></h2><p id="ml"></p></div>
+    <div class="mbody">
+      <div class="cols">
+        <div><h3>School &amp; Academic</h3><div class="tags" id="ta"></div></div>
+        <div><h3>Competitive Exams</h3><div class="tags" id="tc"></div></div>
+      </div>
+      <div class="fact" id="mf"></div>
+      <div class="cta-row"><a class="btn sun" data-wa href="#">Join this class on WhatsApp</a><a class="btn ghost" data-drive href="#">Open Materials Folder</a></div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ===== EDIT LINKS HERE (only these 4 lines) ===== */
+var PHONE   = "917358679269";
+var CHANNEL = "https://whatsapp.com/channel/0029Vb9CIsFIyPtXicBMJJ3d";
+var FORM_MATHS   = "https://forms.gle/REPLACE_WITH_KALVI360_MATHS_FORM";   // Maths registration form
+var FORM_PHYSICS = "https://forms.gle/REPLACE_WITH_KALVI360_PHYSICS_FORM"; // Physics registration form
+var DRIVE   = "https://drive.google.com/drive/folders/1KALVI360_MATERIALS_DEMO"; // Drive folder (dummy for now)
+
+var msg = encodeURIComponent("Hi Kalvi 360, I want to join online classes.");
+document.querySelectorAll("[data-wa]").forEach(function(a){a.href="https://wa.me/"+PHONE+"?text="+msg;a.target="_blank";a.rel="noopener"});
+document.querySelectorAll("[data-channel]").forEach(function(a){a.href=CHANNEL;a.target="_blank";a.rel="noopener"});
+document.querySelectorAll("[data-fm]").forEach(function(a){a.href=FORM_MATHS;a.target="_blank";a.rel="noopener"});
+document.querySelectorAll("[data-fp]").forEach(function(a){a.href=FORM_PHYSICS;a.target="_blank";a.rel="noopener"});
+document.querySelectorAll("[data-drive]").forEach(function(a){a.href=DRIVE;a.target="_blank";a.rel="noopener"});
+
+/* mobile menu + year */
+var mb=document.getElementById("menuBtn"),nl=document.getElementById("navLinks");
+mb.onclick=function(){var o=nl.classList.toggle("open");mb.setAttribute("aria-expanded",o);mb.textContent=o?"×":"☰"};
+nl.querySelectorAll("a").forEach(function(a){a.onclick=function(){nl.classList.remove("open");mb.textContent="☰"}});
+document.getElementById("yr").textContent=new Date().getFullYear();
+/* scroll reveal */
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.15});
+document.querySelectorAll(".rv").forEach(function(el){io.observe(el)});
+
+/* picker */
+var ans=document.getElementById("ans");
+document.querySelectorAll(".opts button").forEach(function(b){b.onclick=function(){
+  document.querySelectorAll(".opts button").forEach(function(x){x.classList.remove("on")});
+  b.classList.add("on");ans.innerHTML="✨ "+b.dataset.a}});
+
+/* cursor + floating chips + tilt cards */
+var dot=document.querySelector(".c-dot"),ring=document.querySelector(".c-ring");
+var mx=0,my=0,rx=0,ry=0;
+if(matchMedia("(hover:hover) and (pointer:fine)").matches){
+  addEventListener("mousemove",function(e){
+    mx=e.clientX;my=e.clientY;dot.style.transform="translate("+mx+"px,"+my+"px)";
+    var cx=innerWidth/2,cy=innerHeight/2;
+    document.querySelectorAll(".chip").forEach(function(c){
+      var d=+c.dataset.d;c.style.transform="translate("+((mx-cx)/innerWidth*d)+"px,"+((my-cy)/innerHeight*d)+"px) rotate("+(d/5)+"deg)"});
+  });
+  (function loop(){rx+=(mx-rx)*.15;ry+=(my-ry)*.15;ring.style.transform="translate("+rx+"px,"+ry+"px)";requestAnimationFrame(loop)})();
+  document.querySelectorAll("a,button,summary").forEach(function(el){
+    el.addEventListener("mouseenter",function(){ring.classList.add("big");ring.textContent=el.dataset.cur||""});
+    el.addEventListener("mouseleave",function(){ring.classList.remove("big");ring.textContent=""});
+  });
+  document.querySelectorAll(".sub-card").forEach(function(c){
+    c.addEventListener("mousemove",function(e){var r=c.getBoundingClientRect();
+      var x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+      c.style.transform="perspective(700px) rotateY("+(x*14)+"deg) rotateX("+(-y*14)+"deg) translateY(-6px)"});
+    c.addEventListener("mouseleave",function(){c.style.transform=""});
+  });
+}
+
+/* ===== SUBJECT POPUPS (edit topics here) ===== */
+var SUB={
+"Mathematics":{g:"∑",bg:"#FDBB1B",fg:"#0E1B3D",line:"Numbers make sense when the steps are simple.",a:["Algebra","Geometry","Trigonometry","Mensuration","Statistics","Sets and Relations","Calculus Basics"],c:["NTSE","NMMS","Maths Olympiad","JEE Maths","TNPSC Aptitude","Bank and SSC Aptitude"],f:"Did you know? The number zero as we use it today was developed in ancient India."},
+"Physics":{g:"⚛",bg:"#35E0A1",fg:"#0E1B3D",line:"See the world around you through science.",a:["Motion and Force","Light and Optics","Electricity","Magnetism","Heat","Waves and Sound","Modern Physics"],c:["JEE Physics","NEET Physics","NTSE","Physics Olympiad","NDA"],f:"Did you know? A lightning bolt can be about five times hotter than the surface of the Sun."},
+"Tamil":{g:"அ",bg:"#FF6B6B",fg:"#ffffff",line:"தமிழ் எளிமையாக, அழகாக.",a:["இலக்கணம் (Grammar)","செய்யுள் (Poems)","உரைநடை (Prose)","கட்டுரை (Essay)","கடிதம் (Letter)","திருக்குறள்"],c:["TNPSC General Tamil","TNPSC Group 4","TNPSC Group 2","TET Tamil","TRB"],f:"Did you know? Tamil is one of the oldest living classical languages in the world."},
+"Computer Science":{g:"</>",bg:"#143A8C",fg:"#ffffff",line:"Learn to think like a coder.",a:["Python Basics","C Programming","HTML Basics","SQL and Databases","Networks","Binary and Number Systems","Class 11 and 12 CS"],c:["CUET","Computer Awareness (TNPSC, Bank, SSC)","Coding Contests"],f:"Did you know? The first computer bug was a real moth found inside a computer in 1947."},
+"English":{g:"Aa",bg:"#0E1B3D",fg:"#FDBB1B",line:"Speak, read and write with confidence.",a:["Grammar","Vocabulary","Reading Comprehension","Essay and Letter Writing","Spoken English","Poetry and Prose"],c:["Bank and SSC English","TET English","CUET English","IELTS Basics"],f:"Did you know? In the word queue, the last four letters are silent."}
+};
+var modal=document.getElementById("modal"),lastBtn=null;
+function openSub(name,btn){
+  var d=SUB[name];if(!d)return;lastBtn=btn;
+  var h=document.getElementById("mh");h.style.background=d.bg;h.style.color=d.fg;
+  document.getElementById("mg").textContent=d.g;
+  document.getElementById("mt").textContent=name;
+  document.getElementById("ml").textContent=d.line;
+  document.getElementById("mf").textContent="💡 "+d.f.replace("Did you know? ","Did you know? ");
+  [["ta",d.a],["tc",d.c]].forEach(function(p){
+    document.getElementById(p[0]).innerHTML=p[1].map(function(t,i){return '<span style="--i:'+i+'">'+t+'</span>'}).join("");
+  });
+  modal.classList.add("open");document.body.style.overflow="hidden";
+  document.getElementById("mx").focus();
+}
+function closeSub(){modal.classList.remove("open");document.body.style.overflow="";if(lastBtn)lastBtn.focus()}
+document.querySelectorAll("[data-sub]").forEach(function(b){b.addEventListener("click",function(){openSub(b.dataset.sub,b)})});
+document.getElementById("mx").onclick=closeSub;
+modal.addEventListener("click",function(e){if(e.target===modal)closeSub()});
+addEventListener("keydown",function(e){if(e.key==="Escape")closeSub()});
+modal.querySelectorAll("a[href]").forEach(function(a){a.addEventListener("click",closeSub)});
+/* about illustration: eyes follow cursor */
+var il=document.querySelector(".illus svg"),pp=il&&il.querySelector(".pupils");
+if(pp)addEventListener("mousemove",function(e){var r=il.getBoundingClientRect(),dx=(e.clientX-(r.left+r.width/2))/innerWidth,dy=(e.clientY-(r.top+r.height/2))/innerHeight;
+  pp.style.setProperty("--ex",Math.max(-4,Math.min(4,dx*14))+"px");pp.style.setProperty("--ey",Math.max(-3,Math.min(3,dy*10))+"px")});
+
+  /* cursor label: black text + white outline (single block) */
+(function(){
+  if(document.querySelector(".c-label")||!matchMedia("(hover:hover) and (pointer:fine)").matches)return;
+  var st=document.createElement("style");
+  st.textContent=".c-ring{font-size:0!important}.c-label{position:fixed;top:0;left:0;pointer-events:none;z-index:1000;font:800 12px var(--font);color:#000;white-space:nowrap;text-shadow:-2px -2px 0 #fff,2px -2px 0 #fff,-2px 2px 0 #fff,2px 2px 0 #fff,0 -2px 0 #fff,0 2px 0 #fff,-2px 0 0 #fff,2px 0 0 #fff}";
+  document.head.appendChild(st);
+  var lab=document.createElement("div");lab.className="c-label";document.body.appendChild(lab);
+  var ring=document.querySelector(".c-ring");
+  document.querySelectorAll("a,button,summary").forEach(function(el){
+    el.addEventListener("mouseenter",function(){lab.textContent=el.dataset.cur||""});
+    el.addEventListener("mouseleave",function(){lab.textContent=""});
+  });
+  (function f(){var r=ring.getBoundingClientRect();lab.style.transform="translate("+(r.left+r.width/2)+"px,"+(r.top+r.height/2)+"px) translate(-50%,-50%)";requestAnimationFrame(f)})();
+})();
+
+</script>
+</body>
+</html>
